@@ -1,4 +1,4 @@
-% is_feasible_gamma.m
+% is_feasible_gamma.m 
 function [ok, Vn, beta_out] = is_feasible_gamma(gamma)
     pvar w1 w2 w3 %создаем переменные – элементы вектора состояния системы
 

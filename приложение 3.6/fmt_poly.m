@@ -1,6 +1,6 @@
 function s = fmt_poly(expr, tol, nd)
 %FMT_POLY  Печатает полином expr, отбрасывая члены с |коэффициент| < tol
-%          и оставляя ровно nd цифр после запятой.
+%          и оставляя ровно nd цифр после запятой. 
     expr = expand(expr);
     [C, T] = coeffs(expr);
     s = '';

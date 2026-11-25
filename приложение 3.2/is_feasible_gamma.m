@@ -1,5 +1,5 @@
 function ok = is_feasible_gamma(gamma, Vn, r)
-    pvar x y
+    pvar x y 
 
     Vg = gamma - Vn;              % линия уровня gamma функции Ляпунова Vn
     g  = r^2 - (x^2 + y^2);       % область G

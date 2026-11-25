@@ -1,5 +1,5 @@
 function [ok, Vn] = is_feasible_r(r)
-    pvar x y
+    pvar x y 
     rho = 1; % параметр осциллятора
     mu = 0.0001;
 

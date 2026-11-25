@@ -1,4 +1,4 @@
-% маятник с демпфированием
+% маятник с демпфированием 
 %
 %   theta_dot = omega
 %   omega_dot = -(g/l) sin(theta) - c*omega

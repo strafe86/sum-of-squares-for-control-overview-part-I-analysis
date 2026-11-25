@@ -74,7 +74,7 @@ Bdot = dB_dx1 * f1 + dB_dx2 * f2;
 expr_dot = -Bdot - lambda1 * h1 - lambda2 * h2;
 prog = sosineq(prog, expr_dot);
 
-%% 7. Запуск решателя 
+%% 7. Запуск решателя
 options.solver = 'sedumi';
 
 prog = sossolve(prog, options);

@@ -17,7 +17,7 @@ end
 threshold = 0;
 stable = maxRe < threshold;
 
-% Прямоугольник области SOS-результата (p1 in [1.7, 3.7], p2 in [5, 9])
+% Прямоугольник области, полученной с помощью SOS (p1 in [1.7, 3.7], p2 in [5, 9])
 rect_x = [1.7, 3.7, 3.7, 1.7, 1.7];
 rect_y = [5, 5, 9, 9, 5];
 
@@ -40,7 +40,7 @@ set(hcb, 'FontName', 'Times New Roman', 'FontSize', 10);
 grid on;
 hold on;
 
-% Прямоугольник SOS-результата (показан в легенде)
+% Прямоугольник, полученный с помощью SOS (показан в легенде)
 plot(rect_x, rect_y, 'k--', 'LineWidth', 2, 'DisplayName', 'SOS-результат');
 legend('Location', 'best', 'FontName', 'Times New Roman', 'FontSize', 10);
 hold off;
@@ -50,7 +50,7 @@ figure('Name', 'Область устойчивости');
 set(gcf, 'DefaultAxesFontName', 'Times New Roman');
 set(gcf, 'DefaultTextFontName', 'Times New Roman');
 
-% Заливка контуров – не добавляем в легенду
+% Заливка контуров – нет в легенде
 contourf(P1, P2, maxRe, 20, 'LineStyle', 'none', 'HandleVisibility', 'off');
 xlabel('$p_1$', 'Interpreter', 'latex', ...
        'FontName', 'Times New Roman', 'FontSize', 14);
